@@ -9,4 +9,25 @@ var _down = keyboard_check(ord("S"));
 hspd = (_right - _left)*vel;
 vspd = (_down - _up)*vel;
 
-move_and_collide(hspd, vspd, obj_ash)
+
+#region IDLE do player
+var _vel = 0.2;
+image_speed = 0;
+if(_right){
+	sprite_index = spr_player_side;
+	image_xscale = 1;
+	image_speed = _vel;
+} else if(_left){
+	sprite_index = spr_player_side;
+	image_xscale = -1;
+	image_speed = _vel;
+} else if(_up){
+	sprite_index = spr_player_up;
+	image_speed = _vel;
+} else if(_down){
+	sprite_index = spr_player_down;
+	image_speed = _vel;
+}
+#endregion
+
+move_and_collide(hspd, vspd, obj_oak);

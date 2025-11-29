@@ -7,7 +7,7 @@ seed = noone;
 
 var _seed_info = get_string("SUA SEED AQUI",  "");
 if(_seed_info == ""){
-	seed = random(999999999)
+	seed = irandom(999);
 } else{
 	seed = _seed_info;
 }
@@ -23,7 +23,7 @@ for(var xx = 0; xx < cell_h; xx += cell){
 	for(var yy = 0; yy < cell_v; yy += cell){
 		var _random = random(1);
 		if(_random >= 0.6){
-			instance_create_layer(xx, yy, "ash", obj_ash);
+			instance_create_layer(xx, yy, "ash", obj_oak);
 		}
 	}
 }
