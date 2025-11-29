@@ -15,7 +15,7 @@ random_set_seed(seed);
 
 for(var xx = 0; xx < cell_h; xx += cell){
 	for(var yy = 0; yy < cell_v; yy += cell){
-		instance_create_layer(xx, yy, layer, obj_grass);
+		instance_create_layer(xx + cell/2, yy + cell/2, layer, obj_grass);
 	}
 }
 
@@ -23,7 +23,7 @@ for(var xx = 0; xx < cell_h; xx += cell){
 	for(var yy = 0; yy < cell_v; yy += cell){
 		var _random = random(1);
 		if(_random >= 0.6){
-			instance_create_layer(xx, yy, "ash", obj_oak);
+			instance_create_layer(xx + cell/2, yy + cell/2, "ash", obj_oak);
 		}
 	}
 }
