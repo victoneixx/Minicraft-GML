@@ -1,2 +1,4 @@
 /// @description Inserir descrição aqui
-image_blend = c_white;
+if(target_bk){
+	image_blend = c_white;
+}

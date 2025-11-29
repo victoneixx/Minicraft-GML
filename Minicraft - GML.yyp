@@ -10,6 +10,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":1,},
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},"order":0,},
     {"id":{"name":"spr_player_side","path":"sprites/spr_player_side/spr_player_side.yy",},"order":2,},
+    {"id":{"name":"spr_energy","path":"sprites/spr_energy/spr_energy.yy",},"order":6,},
     {"id":{"name":"obj_wood","path":"objects/obj_wood/obj_wood.yy",},"order":6,},
     {"id":{"name":"obj_oak","path":"objects/obj_oak/obj_oak.yy",},"order":4,},
     {"id":{"name":"obj_grass","path":"objects/obj_grass/obj_grass.yy",},"order":3,},

@@ -31,3 +31,15 @@ if(_right){
 #endregion
 
 move_and_collide(hspd, vspd, obj_oak);
+
+energy = clamp(energy, 0, 10);
+
+if(energy <= 0){
+	with(obj_elements){
+		tired = true;
+	}
+} else {
+	with(obj_elements){
+		tired = false;
+	}
+}

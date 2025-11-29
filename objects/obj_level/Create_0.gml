@@ -5,7 +5,7 @@ cell_h = room_width;
 cell_v = room_height;
 seed = noone;
 
-var _seed_info = get_string("SUA SEED AQUI",  "");
+var _seed_info = get_string("YOUR SEED HERE",  "");
 if(_seed_info == ""){
 	seed = irandom(999);
 } else{
